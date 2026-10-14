@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FA121522"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Drawer drag indicator -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_chip"
+        android:backgroundTint="#40FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompter Settings"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Speed Setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scroll Speed"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSpeedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.0x"
+            android:textColor="@color/accent_cyan"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/speedSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/primary"
+        android:thumbTint="@color/primary" />
+
+    <!-- Font Size Setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Font Size"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFontSizeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 sp"
+            android:textColor="@color/accent_cyan"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/fontSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/primary"
+        android:thumbTint="@color/primary" />
+
+    <!-- Window Opacity Setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prompter Background Opacity"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvOpacityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85%"
+            android:textColor="@color/accent_cyan"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/opacitySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/primary"
+        android:thumbTint="@color/primary" />
+
+    <!-- Prompter Height Setting (Expands Downwards) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prompter Height (Expands Down)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvHeightValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="225 dp"
+            android:textColor="@color/accent_cyan"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/heightSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progressTint="@color/primary"
+        android:thumbTint="@color/primary" />
+
+    <!-- Screen Backlight Frame Switch (Fill Light) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Screen Backlight (Fill Light)"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchBacklight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Manual Text Edit -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Edit Script Manually"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etManualText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_hud_btn"
+        android:gravity="top|start"
+        android:hint="Paste or edit your script..."
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_muted"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnApplyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary"
+        android:text="Apply"
+        android:textColor="@color/white" />
+
+</LinearLayout>

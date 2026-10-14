@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Teleprompter PRO</string>
+    <string name="play">Start</string>
+    <string name="pause">Pause</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="docx">DOCX</string>
+    <string name="options">Options</string>
+    <string name="slower">Slower</string>
+    <string name="faster">Faster</string>
+    <string name="speed_label">Speed: </string>
+    <string name="font_size">Font Size</string>
+    <string name="mirror_text">Mirror Text</string>
+    <string name="prompter_title">Teleprompter</string>
+    <string name="front_camera">Front ⊙</string>
+    <string name="back_camera">Back 📷</string>
+</resources>

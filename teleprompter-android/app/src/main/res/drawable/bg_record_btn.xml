@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer red ring -->
+    <item>
+        <shape android:shape="oval">
+            <size android:width="54dp" android:height="54dp" />
+            <stroke android:width="3dp" android:color="#EF4444" />
+            <solid android:color="#1AEF4444" />
+        </shape>
+    </item>
+    <!-- Inner red recording dot -->
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <shape android:shape="oval">
+            <solid android:color="#EF4444" />
+        </shape>
+    </item>
+</layer-list>

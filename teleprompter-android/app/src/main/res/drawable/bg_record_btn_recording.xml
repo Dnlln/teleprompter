@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer white ring -->
+    <item>
+        <shape android:shape="oval">
+            <size android:width="54dp" android:height="54dp" />
+            <stroke android:width="3dp" android:color="#FFFFFF" />
+            <solid android:color="#33EF4444" />
+        </shape>
+    </item>
+    <!-- Inner white square (Stop symbol) -->
+    <item android:top="16dp" android:bottom="16dp" android:left="16dp" android:right="16dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp" />
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>
